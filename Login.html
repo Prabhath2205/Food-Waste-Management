@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Donation Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://d1dxs113ar9ebd.cloudfront.net/225batonrouge/2017/12/iStock-serving-food-e1513719558505.jpg'); /* Replace with the actual path to your background image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        header {
+            position:fixed;
+            top: 0;
+            width: 100%;
+            background-color: #004d40;
+            color: white;
+            padding: 20px 10px;
+            height:50px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+       .logo {
+        max-width: 29px; /* Adjusted maximum width for the logo */
+        margin-right: 10px;
+        mix-blend-mode: screen;}
+        /* Navigation styles */
+        nav {
+            position: fixed;
+            top: 80px; /* Adjusted top position */
+            width: 100%;
+            background-color: #00695c;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;}
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #00695c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .forgot-password {
+            margin-top: 10px;
+            text-align: right;
+        }
+
+        .register-link {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+<h1><img src="https://pbs.twimg.com/profile_images/1307533786/Logo_WasteNoFood_2_400x400.jpg" class="logo">Waste No Food</h1>
+</header>
+<nav>
+    <a href="Home.html" target="_self">Homes</a>
+    <a href="About Us.html" target="_self">About Us</a>
+    <a href="Donation.html" target="_self">Food Donors</a>
+</nav>
+
+    <div class="login-container">
+        <h2>Food Donation Login</h2>
+        <form class="login-form">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div class="forgot-password">
+            <a href="#">Forgot Password?</a>
+        </div>
+        <div class="register-link">
+            <p>Click <a href="Signup.html" target="_self">here</a> to register if you are new</p>
+        </div>
+    </div>
+
+</body>
+</html>

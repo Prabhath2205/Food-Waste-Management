@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup for Food Donation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://d1dxs113ar9ebd.cloudfront.net/225batonrouge/2017/12/iStock-serving-food-e1513719558505.jpg'); /* Replace with the actual path to your background image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header {
+            position:fixed;
+            top: 0;
+            width: 100%;
+            background-color: #004d40;
+            color: white;
+            padding: 20px 10px;
+            height:50px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+       .logo {
+        max-width: 25px; /* Adjusted maximum width for the logo */
+        margin-right: 10px;
+        mix-blend-mode: screen;}
+        /* Navigation styles */
+        nav {
+            position: fixed;
+            top: 80px; /* Adjusted top position */
+            width: 100%;
+            background-color: #00695c;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;}
+
+        .signup-container {
+            max-width: 700px; /* Adjusted maximum width */
+            width: 100%;
+            
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .signup-container h2 {
+            margin-bottom: 20px;
+            font-family: 'Times New Roman', Times, serif; /* Specify font family for h2 */
+        }
+
+        .signup-form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .signup-form input,
+        .signup-form select {
+            width: calc(50% - 15px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+            box-sizing: border-box;
+            cursor: text;
+        }
+        .signup-form textarea {
+            width: 48%; /* Take up full width */
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+            box-sizing: border-box;
+            resize: vertical; /* Allow vertical resizing of the textarea */}
+
+        .signup-form select {
+            cursor: pointer;
+        }
+
+        .signup-form button {
+            width: 25%; /* Adjusted button width */
+            padding: 10px;
+            background-color:#00695c;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 10px; /* Adjusted margin */
+            margin-left:270px;
+          }
+    </style>
+</head>
+<body>
+<header>
+<h1><img src="https://pbs.twimg.com/profile_images/1307533786/Logo_WasteNoFood_2_400x400.jpg" class="logo">Waste No Food</h1>
+</header>
+<nav>
+    <a href="Home.html" target="_self">Homes</a>
+    <a href="About Us.html" target="_self">About Us</a>
+    <a href="Donation.html" target="_self">Food Donors</a>
+</nav>
+    <div class="signup-container">
+        <h2>Signup for Food Donation</h2>
+        <form class="signup-form">
+            <input type="text" placeholder="Type of User" required>
+            <input type="text" placeholder="Name" required>
+            <input type="text" placeholder="Phone" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Contact Person" required>
+            <input type="password" placeholder="Password" required>
+            <textarea placeholder="Address" required></textarea>
+            <input type="text" placeholder="Country" required>
+            <input type="text" placeholder="State" required>
+            <select>
+                <option value="" disabled selected>Select Type of Donor</option>
+                <option value="individual">Individual</option>
+                <option value="organization">Organization</option>
+            </select>
+            <select>
+                <option value="" disabled selected>Select Cuisine</option>
+                <option value="asian">Asian</option>
+                <option value="western">Western</option>
+                <!-- Add more cuisine options as needed -->
+            </select>
+            <input type="text" placeholder="Security Question" required>
+            <input type="file" accept="image/*" placeholder="Upload Profile Picture" required>
+            <input type="text" placeholder="Security Answer" required>
+            <a href="Login.html" target="_self">
+                <button type="submit">Signup</button>
+            </a>
+        </form>
+    </div>
+</body>
+</html>

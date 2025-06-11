@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Waste No Food</title>
+    <link rel="icon" href="https://pbs.twimg.com/profile_images/1307533786/Logo_WasteNoFood_2_400x400.jpg"
+        type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #004d40;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #00695c;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Main content styles */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            /* Adjust the maximum width as needed */
+            margin: auto;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            /* Place content above the video */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #00695c;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #00695c;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            color: #00695c;
+            font-size: 24;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #00695c;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #004d40;
+            color: #f5f5f5;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .contact-info img {
+            max-width: 50px;
+            height: auto;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .social-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-links img {
+            width: 30px;
+            height: auto;
+            margin: 0 10px;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-links img:hover {
+            opacity: 1;
+        }
+
+        #video-container {
+            position: relative;
+        }
+
+        #video-border1 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            z-index: 2;
+        }
+
+        #video-border2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10%;
+            z-index: 2;
+        }
+
+        #video {
+            width: 100%;
+            height: 50%;
+        }
+
+        .bttn1 {
+            background-color: #f5f5f5;
+            color: #00695c;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="color: white;"><img
+                src="https://pbs.twimg.com/profile_images/1307533786/Logo_WasteNoFood_2_400x400.jpg" width="90"
+                height="90" align="left">Waste No Food</h1>
+    </header>
+    <nav>
+        <a href="About Us.html" target="_self">About Us</a>
+        <a href="Donation.html" target="_self">Food Donors</a>
+        <a href="Signup.html" target="_self">Sign Up</a>
+        <a href="Login.html" target="_self">Login</a>
+    </nav>
+    <div class="container">
+        <div id="video-container">
+            <img src="https://wastenofood.org/wp-content/uploads/2021/05/crop@1X-1-3-1536x226.png" alt="Border Image"
+                id="video-border1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW2_RiYaEbjExU_CPdux9YwYmEMk9nwtT2e24atav1jzkivQVmjvzaJSrVlYg2lQH_3zw&usqp=CAU"
+                alt="Border Image" id="video-border2">
+            <video id="video" autoplay loop muted>
+                <source src="https://wastenofood.org/wp-content/uploads/2021/05/WasteNoFood.mp4" type="video/mp4">
+            </video>
+        </div>
+        <h2>Find ,Secure and Deliver Food.</h2>
+        <p>We are a non-profit enabling the exchange of excess food from the food industry to those who need it most.
+        </p>
+        <a href="Donation.html" target="_self1">
+            <button>Donate Food</button></a>
+        <a href="Login.html" target="_self">
+            <button>Secure Food</button></a>
+    </div>
+    <h1>How It Works</h1>
+    <div class="container">
+        <table align="center">
+            <tr>
+                <td align="center"><img src="https://wastenofood.org/wp-content/uploads/2021/05/Layer-22.png"
+                        width="200" height="200">
+                    <h3>Food is Donated</h3>
+                    <button class="bttn1">Farms, restaurants, cafeterias, hotels, stadiums, and grocery stores post
+                        excess food in under a minute on the Waste No Food app.</button>
+                </td>
+                <td align="center"><img src="https://wastenofood.org/wp-content/uploads/2021/05/Layer-23.png"
+                        width="200" height="200">
+                    <h3>Food is Secured</h3>
+                    <button class="bttn1">Pre-vetted charities immediately get notified about food donations and can
+                        claim any donations they can use to serve hungry clients</button>
+                </td>
+                <td align="center"><img src="https://wastenofood.org/wp-content/uploads/2021/05/third-pic-740x565-1.png"
+                        width="200" height="200">
+                    <h3>Food is Picked Up</h3>
+                    <button class="bttn1">The charity, or a network of volunteers, picks up the food and serves it to
+                        hungry people.</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <h1>A Solvable Problem</h1>
+    <div class="container">
+        <table align="center">
+            <tr>
+                <td align="center">
+                    <img src="https://wastenofood.org/wp-content/uploads/2021/05/Raw-Food-80x80-1.png" width="100"
+                        height="100">
+                    <h3>Raw Food</h3>
+                    <button class="bttn1">40% of all food is thrown away or plowed over. In California, 100 billion
+                        pounds of raw food is thrown away.</button>
+                </td>
+                <td align="center">
+                    <img src="https://wastenofood.org/wp-content/uploads/2021/05/prepared-food-72x80-1.png" width="100"
+                        height="100">
+                    <h3>Prepared Food</h3>
+                    <button class="bttn1">In California alone, over 5 billion pounds of prepared food is thrown away
+                        every month.</button>
+                </td>
+                <td align="center">
+                    <img src="https://wastenofood.org/wp-content/uploads/2021/05/hunger-80x80-1.png" width="100"
+                        height="100">
+                    <h3>Hunger</h3>
+                    <button class="bttn1">If only one-third of California’s excess food were diverted, it would resolve
+                        the hunger problems in the state.</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <div class="social-links">
+        <a href="https://facebook.com/wastenofood" target="_blank">
+            <img src="https://pbs.twimg.com/profile_images/1307533786/Logo_WasteNoFood_2_400x400.jpg" alt="Facebook">
+        </a>
+        <a href="https://twitter.com/wastenofood" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/220px-Logo_of_Twitter.svg.png"
+                alt="Twitter">
+        </a>
+        <a href="https://instagram.com/wastenofood" target="_blank">
+            <img src="https://pbs.twimg.com/profile_images/1526231349354303489/3Bg-2ZsT_400x400.jpg" alt="Instagram">
+        </a>
+    </div>
+    <footer>
+        <p>Send an Email: <a href="mailto:info@wastenofood.org">info@wastenofood.org</a></p>
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="About Us.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQs</a></li>
+
+        </ul>
+    </footer>
+</body>
+
+</html>
